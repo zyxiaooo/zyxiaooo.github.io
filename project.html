@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+
+	                       <header id="header">
+									
+								<nav id="nav">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yuxiao Zhang's Homepage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="index.html">Home</a>
+									<a href="project.html" class="current-page-item"><strong>Project</strong></a>
+									<a href="research.html">Research & Experience</a>
+									<a href="aboutme.html">About Me</a>
+								</nav>
+							</header>
+
+						</div>
+				</div>
+			</div>
+			<div id="main">
+				<div class="container">
+					<div class="row main-row">
+						<div class="2u 12u(mobile)">
+
+							<section>
+								<h2>How about some links?</h2>
+								<div>
+									<div class="row">
+					
+										<div class="12u 12u(mobile)">
+											<ul class="link-list" >
+                                                <sublist>
+												<li><a href="#music">Music Action Game</a></li>
+												<li><a href="#football">Football Tracing</a></li>
+												<li><a href="#AAAS">AAAS Software</a></li>
+												<li><a href="#auto">Auto Alarm App</a></li>
+												<li><a href="#simplified">Small C compiler</a></li>
+                                                <li><a href="#smart">Vehicle Controller App</a></li>
+                                                <li><a href="#bulls">Bulls and Cows Game</a></li>
+                                                <li><a href="#advanced">CPU Simulator</a></li>
+                                                </sublist>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						</div>
+						<div class="10u 12u(mobile) important(mobile)">
+<!--<img src="images/pic2.jpg" style="float:right; width:300px; height=200px" /> 
+<iframe style="float:right" width="640" height="385" src="https://www.youtube.com/embed/dydaVwDxbgY" frameborder="0"> </iframe>  -->
+							<section class="right-content">
+								<h2><a name="music">Music Action Game on Imbedded System (2015)</a></h2>
+								<p>Design a music action game on CPU with limited performance(Cortex M3). The game needs to do the following things at a very short time: reading pattern file and music from SD cards,<iframe style="float:right" width="450" height="270" src="https://www.youtube.com/embed/dydaVwDxbgY" frameborder="0"> </iframe> playing music, dealing with touch instances and changing the patterns on LCD. </p>
+<p>Because of low CPU frequency (50MHz) and limited memory space (96k), both hardware and software optimiz	ation skills are used to ensure the game run smoothly. Hardware optimization includes using Direct Memory Access to connstantly sending audio data to release CPU. Software optimization includes minimizing the pixel to draw each frame, generating all the note pattern while loading the song. </p>
+<p> Also, the game has an excellent framework. Everyone can play their new song just by putting the audio file and pattern file into SD card.</p>
+<p>Project Website:<a href="https://github.com/zyxiaooo/SJTU/tree/master/embedded_system"> https://github.com/zyxiaooo/SJTU/tree/master/embedded_system</a></p><br><br>
+
+								<h2><a name = "football">Football Tracing in Low Quality Video (2016)</a></h2>
+								<p>Design an algorithm to trace<iframe style="float:right" width="450" height="270" src="https://www.youtube.com/embed/cCc2qiDZVdI" frameborder="0"> </iframe> the players and football in a video with poor quality. The algorithm combines several classic methods and also uses Weighted Matrix–a new innovating way to particularly trace football. </p>
+                                								<p>The Weighted Matrix calculates how likely a pixel can belongs to football and the matrix updated each frame. The weighted matrix can successfully distinguish football from similar objects such as shoes of football player and gloves of goalkeeper through a sequence of frames. It is also an automatic algorithm, which means we don't need to tell the program the initial position of football, it can automatically find the football after several frames.</p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/football_tracing">https://github.com/zyxiaooo/SJTU/tree/master/football_tracing</a></p><br><br>
+
+                                <h2><a name = "AAAS">AAAS: A Medical Software Development (2015)</a></h2>
+								<p>Develop a software to<iframe style="float:right" width="450" height="270" src="https://www.youtube.com/embed/UopQClQEsMo" frameborder="0"> </iframe> automatically help doctor recognize and seperate visceral adipose tissues and subcutaneous adipose. The software uses deep learning algorithm designed by Dr. Fei Jiang to analyse original picture.</p>
+<p>My resposibilies includes integrating the algorithm into the software, providing friendly user interface, allowing users to manually modify the results, enableing volume rendering function, and accelerating the algorithm using CUDA based GPU. </p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/AAAS">https://github.com/zyxiaooo/SJTU/tree/master/AAAS</a></p><br><br>
+                                <h2><a name = "auto">Auto Alarm: An Interesting IOS app (2016)</a></h2>
+								<p>This tiny app,<img src="images/alarm2.PNG" style="float:right; width:175px; height:270px" /><img src="images/alarm1.PNG" style="float:right; width:175px; height:270px" /> together with a small bluetooth device, can periodically send SOS email which includes users' location information to their selected contacts when something emergency happens (or in another words, when the user press the button on the bluetooth device several times). The app use some tricky methods so it can work totally in the background, the app can stay in background forever unless user kills it manually. </p>
+<p><a href="https://github.com/zyxiaooo/SJTU/tree/master/auto-alarm">https://github.com/zyxiaooo/SJTU/tree/master/auto-alarm</a></p><br><br>
+                                <h2><a name = "simplified">Simplified C Language Compiler (2015)</a></h2>
+								<p>Design and Implement a simplified complier for a given programming language called SMALLC, which is a simplified version of C language. The complier takes SMALLC source code as input, then proceed lexical analysis and syntax analysis with the help of lex and Yacc. The complier's output is LLVM middle term language.</p>
+<p>Also I implemented some extra functions. First is error checking. With this the complier can detect some simple error when the program fail to compile and return the line number of error code. Second is expression evaluation. That is calculating the known expression directly during the compile time to decrease the number of output codes. </p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/compiler">https://github.com/zyxiaooo/SJTU/tree/master/compiler</a></p><br><br>
+                                <h2><a name = "smart">Smart Phone Remote Vehicle Control app (2015)</a></h2>
+								<p>Develop a control system on smart vehicle. The system use <iframe style="float:right" width="450" height="270" src="https://www.youtube.com/embed/7amRV9_r--g" frameborder="0"> </iframe>two cellphones, the first one, called transmission cellphone, is on the vehicle, responses for video and send command to vehicle using bluetooth. The other is on the user's hand, response for sending command from user to transmission cellphones and show the video from transmission cellphone.</p>
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/car-controller">https://github.com/zyxiaooo/SJTU/tree/master/car-controller</a></p><br><br>
+                                <h2><a name = "bulls">Bulls and Cows game on BASYS2 board</a>(2014)
+</h2>
+								<p>Design a small but<iframe style="float:right" width="450" height="270" src="https://www.youtube.com/embed/pjp1oMMQ8JA" frameborder="0"> </iframe> classic game on BASYS2 board. The game use nearly all resource available on the board, including four digital 7-segment display for displaying numbers and results, 8 LCD to show the remaining chances, 2 switches for control.</p>
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/small_game"> https://github.com/zyxiaooo/SJTU/tree/master/small_game</a></p><br><br>
+                                <h2><a name = "advanced">"Advanced MIPS CPU Simulator with Multi-Cycle/Pipeline (2014)</a></h2>
+								<p>Develop a MIPS CPU simulator with multi-cycle and pipeline. Design the simulator of each components used in a MIPS CPU like instruction memory, data memory, ALU and ALU Control. Then connected all components into an advanced MIPS CPU simulator with multi-Cycle and pipeline. Finlaly we need to implement the multi-cycle CPU Simulator on a Xilinx Experiment Board in Verilog HDL.</p>
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+<p>Project Website: <a href="https://github.com/zyxiaooo/SJTU/tree/master/computer-arch">https://github.com/zyxiaooo/SJTU/tree/master/computer-arch</a></p>
+							</section>
+
+						</div>
+					</div>
+				</div>
+
+			<div id="footer-wrapper">
+					<div class="row">
+						<div class="12u">
+
+							<div id="copyright">
+								&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+							</div>
+
+						</div>
+					</div>
+		    </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
